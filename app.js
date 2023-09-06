@@ -107,7 +107,7 @@ app.delete('/movie/:id', function (request, response) {
                     if (err) {
                         console.log("Ha ocurrido un error al escribir")
                     }
-                    return res.status(200).json({message : "Pelicula eliminada correctamente"});
+                    return response.status(200).json({message : "Pelicula eliminada correctamente"});
                 });
             }
         });
